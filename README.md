@@ -4,29 +4,41 @@ This is a good starting point for a [Next.js](https://nextjs.org/) website, havi
 
 ## Installation
 
-Assuming you have either node or yarn installed, you can run...
+Assuming you have node installed on your machine, you can install everything else by running...
 
 ```bash
 npm i
-# or
-yarn
 ```
 
-to install everything you need.
+## Running the site locally
 
-## Development
-
-First, run the development server:
+To spin up a copy of the site locally, run...
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+...and view at [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing pages by modifying the files within `pages/...`, or edit components within `components/...`. The page in your browser will auto-updates as you edit the files.
+## Running Storybook
+
+To see the components in isolation within Storybook, run...
+
+```bash
+npm run storybook
+```
+
+...and view at [http://localhost:6006](http://localhost:6006) in your browser.
+
+## Editing Pages & Components
+
+You can start editing pages by modifying the files within `pages/...`, or edit components within `components/...`. The page in your browser (site and/or Storybook) will auto-updates as you edit the files.
+
+## Fixtures
+
+Until data is set up to be imported from APIs, you can find statically stored data within json files inside of the `fixtures` folder.
+
+---
 
 ## APIs
 
