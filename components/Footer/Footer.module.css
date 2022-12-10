@@ -1,8 +1,8 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  padding: calc(var(--spacing) * 4) 0;
+  border-top: 1px solid var(--offWhite);
   justify-content: center;
   align-items: center;
 }
@@ -21,7 +21,7 @@
 
 @media (prefers-color-scheme: dark) {
   .footer {
-    border-color: #222;
+    border-color: var(--darkGray);
   }
 
   .logo img {

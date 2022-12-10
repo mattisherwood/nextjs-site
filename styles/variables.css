@@ -1,0 +1,11 @@
+:root {
+  --primary: #0070f3;
+  --white: #fff;
+  --offWhite: #eaeaea;
+  --darkGray: #222;
+  --black: #000;
+
+  --spacing: 8px;
+
+  --borderRadius: var(--spacing);
+}
