@@ -1,0 +1,25 @@
+.header {
+  border-bottom: solid 1px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.link {
+  padding: 10px;
+  transition: color 0.15s ease;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-color: #222;
+  }
+}

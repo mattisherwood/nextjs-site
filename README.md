@@ -1,6 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Site
 
-## Getting Started
+This is a good starting point for a [Next.js](https://nextjs.org/) website, having been bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), but extras added such as centralised components and some dummy fixtures ready to be replaced with data from an API.
+
+## Installation
+
+Assuming you have either node or yarn installed, you can run...
+
+```bash
+npm i
+# or
+yarn
+```
+
+to install everything you need.
+
+## Development
 
 First, run the development server:
 
@@ -12,7 +26,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing pages by modifying the files within `pages/...`, or edit components within `components/...`. The page in your browser will auto-updates as you edit the files.
+
+## APIs
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
