@@ -18,6 +18,10 @@
   border-color: #0070f3;
 }
 
+.link.current {
+  border-bottom: solid 2px;
+}
+
 @media (prefers-color-scheme: dark) {
   .header {
     border-color: #222;
