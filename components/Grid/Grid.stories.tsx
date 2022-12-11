@@ -1,9 +1,14 @@
-import { ComponentMeta } from "@storybook/react"
+import { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Card } from ".."
 import { Grid } from "./Grid"
 
 export default {
   component: Grid,
+  argTypes: {
+    columns: {
+      control: { type: "number", min: 0, max: 6 },
+    },
+  },
 } as ComponentMeta<typeof Grid>
 
 const cards = [
@@ -17,10 +22,15 @@ const cards = [
   { title: "Card 8" },
 ]
 
-export const Base = () => (
-  <Grid>
+const Template: ComponentStory<typeof Grid> = (args) => (
+  <Grid {...args}>
     {cards.map(({ title }) => (
       <Card title={title} />
     ))}
   </Grid>
 )
+
+export const Base = Template.bind({})
+Base.args = {
+  columns: 0,
+}
