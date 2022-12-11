@@ -1,14 +1,26 @@
 export const pages = [
-  { title: "Home", description: "Welcome to our website!", url: "/" },
   {
-    title: "About",
+    title: "Home",
+    menuLabel: "Home",
+    description: "Welcome to our website!",
+    url: "/",
+  },
+  {
+    title: "About us",
+    menuLabel: "About",
     description: "Find out more about our organisation.",
     url: "/about",
   },
   {
-    title: "People",
-    description: "The people who make our organisation tick.",
+    title: "Our People",
+    menuLabel: "People",
+    description: "Some of the fantastic people who make our organisation work.",
     url: "/people",
   },
-  { title: "Contact", description: "Get in touch.", url: "/contact" },
+  {
+    title: "Contact us",
+    menuLabel: "Contact",
+    description: "Get in touch.",
+    url: "/contact",
+  },
 ]
