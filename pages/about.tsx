@@ -125,7 +125,7 @@ export default function Page() {
           </li>
         </ul>
         <h2>Next Up</h2>
-        <p>These haven't been added yet, but </p>
+        <p>These haven&apos;t been added yet, but </p>
         <ul>
           <li>
             <strong>Content Blocks</strong>
@@ -156,11 +156,12 @@ export default function Page() {
             <br />
             <em>
               Make custom <code>Link</code> component so{" "}
-              <code>target='blank'</code> gets handled programatically.
+              <code>target=&apos;blank&apos;</code> gets handled
+              programatically.
             </em>
           </li>
           <li>
-            <strong>Expand on 'People'</strong> including...
+            <strong>Expand on &apos;People&apos;</strong> including...
           </li>
           <ul>
             <li>
@@ -200,8 +201,8 @@ export default function Page() {
               This site is currently too simple to need MUI. If it needs a
               couple of extra components they can be custom made.
               <br />
-              I'm trying not to add stuff to this boilerplate if it's not
-              needed.
+              I&apos;m trying not to add stuff to this boilerplate if it&apos;s
+              not needed.
             </em>
           </li>
         </ul>
