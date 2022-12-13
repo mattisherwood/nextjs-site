@@ -26,7 +26,7 @@ const cards = [
 const Template: ComponentStory<typeof Grid> = (args) => (
   <Grid {...args}>
     {cards.map(({ title }) => (
-      <Card title={title} />
+      <Card title={title} key={title} />
     ))}
   </Grid>
 )

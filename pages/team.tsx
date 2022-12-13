@@ -10,7 +10,7 @@ export default function Page() {
       <Header currentPage={content.shortTitle} />
       <Main content={content}>
         <Grid columns={2}>
-          {people.map(({ firstName, lastName, bio, image }) => (
+          {people.map(({ id, firstName, lastName, bio, image }) => (
             <Card
               title={`${firstName} ${lastName}`}
               description={bio}
@@ -20,6 +20,7 @@ export default function Page() {
                 width: 75,
                 height: 75,
               }}
+              key={id}
             />
           ))}
         </Grid>

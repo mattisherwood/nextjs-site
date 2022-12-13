@@ -10,8 +10,13 @@ export default function Page() {
       <Header currentPage='Home' />
       <Main content={content}>
         <Grid>
-          {pages.map(({ shortTitle, description, url }) => (
-            <Card title={shortTitle} description={description} url={url} />
+          {pages.map(({ id, shortTitle, description, url }) => (
+            <Card
+              title={shortTitle}
+              description={description}
+              url={url}
+              key={id}
+            />
           ))}
         </Grid>
       </Main>
