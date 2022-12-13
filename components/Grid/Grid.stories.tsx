@@ -3,10 +3,11 @@ import { Card } from ".."
 import { Grid } from "./Grid"
 
 export default {
+  title: "Atoms/Grid",
   component: Grid,
   argTypes: {
     columns: {
-      control: { type: "number", min: 0, max: 6 },
+      control: { type: "range", min: 0, max: 6, step: 1 },
     },
   },
 } as ComponentMeta<typeof Grid>

@@ -3,14 +3,15 @@ import { pages } from "../fixtures"
 
 const content = pages[3]
 
-export default function Contact() {
+export default function Page() {
   return (
     <>
       <Head title={content.title} />
-      <Header currentPage={content.title} />
-      <Main>
-        <h1>{content.title}</h1>
-        <p>{content.description}</p>
+      <Header currentPage={content.shortTitle} />
+      <Main content={content}>
+        <form>
+          <p>Form goes here</p>
+        </form>
       </Main>
       <Footer />
     </>

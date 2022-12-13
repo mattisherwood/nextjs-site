@@ -8,6 +8,7 @@
 
 .link {
   padding: var(--spacing);
+  color: inherit;
   transition: color 0.15s ease;
 }
 
@@ -16,6 +17,7 @@
 .link:active {
   color: var(--primary);
   border-color: var(--primary);
+  text-decoration: none;
 }
 
 .link.current {

@@ -1,13 +1,17 @@
 import { ReactNode } from "react"
-import { Container } from ".."
+import { Container, Hero } from ".."
 import classes from "./Main.module.css"
 
 type Props = {
   children: ReactNode
+  content: { title: string; description: string }
 }
 
-export const Main = ({ children }: Props) => (
+export const Main = ({ children, content }: Props) => (
   <main className={classes.main}>
-    <Container size='small'>{children}</Container>
+    <Hero content={content} />
+    <div className={classes.content}>
+      <Container>{children}</Container>
+    </div>
   </main>
 )

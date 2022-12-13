@@ -3,14 +3,12 @@ import { pages, people } from "../fixtures"
 
 const content = pages[2]
 
-export default function About() {
+export default function Page() {
   return (
     <>
       <Head title={content.title} />
-      <Header currentPage={content.title} />
-      <Main>
-        <h1>{content.title}</h1>
-        <p>{content.description}</p>
+      <Header currentPage={content.shortTitle} />
+      <Main content={content}>
         <Grid columns={2}>
           {people.map(({ firstName, lastName, bio, image }) => (
             <Card

@@ -1,10 +1,9 @@
-.main {
+.content {
   display: flex;
   align-items: center;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   min-height: 50vh;
-  padding: calc(var(--spacing) * 8) 0;
-  text-align: center;
+  padding: calc(var(--spacing) * 5) 0;
 }

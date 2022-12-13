@@ -1,17 +1,17 @@
 import { Card, Footer, Grid, Head, Header, Main } from "../components"
 import { pages } from "../fixtures"
 
-export default function Home() {
+const content = pages[0]
+
+export default function Page() {
   return (
     <>
       <Head title='Home' />
       <Header currentPage='Home' />
-      <Main>
-        <h1>Welcome to this NextJS Website</h1>
-        <h2>Using React/Typescript</h2>
+      <Main content={content}>
         <Grid>
-          {pages.map(({ title, description, url }) => (
-            <Card title={title} description={description} url={url} />
+          {pages.map(({ shortTitle, description, url }) => (
+            <Card title={shortTitle} description={description} url={url} />
           ))}
         </Grid>
       </Main>

@@ -4,38 +4,45 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
   margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+li:last-child {
+  margin-bottom: 0;
 }
 
 h1 {
   line-height: 1.15;
   font-size: 4rem;
-  text-align: center;
 }
 
-h1 a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-h1 a:hover,
-h1 a:focus,
-h1 a:active {
-  text-decoration: underline;
+p,
+ul,
+li {
+  margin-bottom: 1em;
 }
 
 code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
+  background: var(--offWhite);
+  border-radius: calc(var(--spacing) * 0.5);
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   code {
-    background: #111;
+    background: var(--darkGray);
   }
 }

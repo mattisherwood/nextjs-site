@@ -4,7 +4,7 @@ import classes from "./Grid.module.css"
 
 type Props = {
   children: ReactNode
-  columns?: 0 | 1 | 2 | 3 | 4 | 5 | 6
+  columns?: number
 }
 
 export const Grid = ({ children, columns = 0 }: Props) => (

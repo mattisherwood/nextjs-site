@@ -2,6 +2,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Container } from "./Container"
 
 export default {
+  title: "Atoms/Container",
   component: Container,
 } as ComponentMeta<typeof Container>
 

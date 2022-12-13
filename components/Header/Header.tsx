@@ -12,15 +12,15 @@ export const Header = ({ currentPage }: Props) => {
     <header className={classes.header}>
       <Container size='large'>
         <nav className={classes.navigation}>
-          {pages.map(({ menuLabel, url }) => (
+          {pages.map(({ shortTitle, url }) => (
             <Link
               className={clsx(
                 classes.link,
-                currentPage == menuLabel && classes.current
+                currentPage == shortTitle && classes.current
               )}
               href={url}
             >
-              {menuLabel}
+              {shortTitle}
             </Link>
           ))}
         </nav>
