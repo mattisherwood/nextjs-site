@@ -55,12 +55,12 @@ export default function Page() {
             <li>
               Install Storybook for NextJS{" "}
               <em>
-                (As described{" "}
+                (As described in{" "}
                 <Link
                   href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
                   target='_blank'
                 >
-                  here
+                  this Storybook blog article
                 </Link>
                 )
               </em>
@@ -72,12 +72,12 @@ export default function Page() {
             <li>
               Fix so Next Image will work inside of Storybook{" "}
               <em>
-                (As described{" "}
+                (As described in{" "}
                 <Link
                   href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
                   target='_blank'
                 >
-                  here
+                  this Storybook blog article
                 </Link>
                 )
               </em>
