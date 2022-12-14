@@ -121,6 +121,31 @@ export default function Page() {
             </ul>
           </li>
           <li>
+            <strong>Start Optimising</strong>
+            <ul>
+              <li>
+                <em>Add lang attribute to html element</em>
+              </li>
+              <li>
+                <em>Add default robots.txt</em>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>
+              Add{" "}
+              <a href='https://plopjs.com/' target='_blank'>
+                Plop
+              </a>{" "}
+              with Component Creator script
+            </strong>
+            <br />
+            <em>
+              Means you can run <code>plop</code> to create the starting point
+              for a new component.
+            </em>
+          </li>
+          <li>
             <strong>Hero Block</strong>
             <br />
             <em>Commonly used block used across all pages</em>
