@@ -37,60 +37,60 @@ export default function Page() {
             <strong>Base content</strong>
             <br />
             <em>A few standard pages that most sites need.</em>
+            <ul>
+              <li>Homepage</li>
+              <li>About page</li>
+              <li>Team page</li>
+              <li>Contact page</li>
+            </ul>
           </li>
-          <ul>
-            <li>Homepage</li>
-            <li>About page</li>
-            <li>Team page</li>
-            <li>Contact page</li>
-          </ul>
           <li>
             <strong>
               <Link href='https://storybook.js.org/' target='_blank'>
                 Storybook
               </Link>
             </strong>
+            <ul>
+              <li>
+                Install Storybook for NextJS{" "}
+                <em>
+                  (As described in{" "}
+                  <Link
+                    href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
+                    target='_blank'
+                  >
+                    this Storybook blog article
+                  </Link>
+                  )
+                </em>
+              </li>
+              <li>
+                Stories moved to be stored alongside each component & sorted
+                into levels based on atomic design principles
+              </li>
+              <li>
+                Fix so Next Image will work inside of Storybook{" "}
+                <em>
+                  (As described in{" "}
+                  <Link
+                    href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
+                    target='_blank'
+                  >
+                    this Storybook blog article
+                  </Link>
+                  )
+                </em>
+              </li>
+              <li>
+                <Link
+                  href='https://storybook.js.org/addons/@storybook/addon-a11y/'
+                  target='_blank'
+                >
+                  A11y accessibility addon
+                </Link>
+              </li>
+            </ul>
           </li>
-          <ul>
-            <li>
-              Install Storybook for NextJS{" "}
-              <em>
-                (As described in{" "}
-                <Link
-                  href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
-                  target='_blank'
-                >
-                  this Storybook blog article
-                </Link>
-                )
-              </em>
-            </li>
-            <li>
-              Stories moved to be stored alongside each component & sorted into
-              levels based on atomic design principles
-            </li>
-            <li>
-              Fix so Next Image will work inside of Storybook{" "}
-              <em>
-                (As described in{" "}
-                <Link
-                  href='https://storybook.js.org/blog/get-started-with-storybook-and-next-js/'
-                  target='_blank'
-                >
-                  this Storybook blog article
-                </Link>
-                )
-              </em>
-            </li>
-            <li>
-              <Link
-                href='https://storybook.js.org/addons/@storybook/addon-a11y/'
-                target='_blank'
-              >
-                A11y accessibility addon
-              </Link>
-            </li>
-          </ul>
           <li>
             <strong>
               <Link href='https://www.npmjs.com/package/clsx' target='_blank'>
@@ -105,19 +105,21 @@ export default function Page() {
           </li>
           <li>
             <strong>CSS Restructure</strong>
-          </li>
-          <ul>
-            <li>
-              Component-specific styles stored alongside each component using
-              CSS Modules
-            </li>
-            <li>Global styles stored centrally</li>
             <ul>
-              <li>variables.css</li>
-              <li>global.css</li>
-              <li>typography.css</li>
+              <li>
+                Component-specific styles stored alongside each component using
+                CSS Modules
+              </li>
+              <li>
+                Global styles stored centrally
+                <ul>
+                  <li>variables.css</li>
+                  <li>global.css</li>
+                  <li>typography.css</li>
+                </ul>
+              </li>
             </ul>
-          </ul>
+          </li>
           <li>
             <strong>Hero Block</strong>
             <br />
@@ -162,16 +164,16 @@ export default function Page() {
           </li>
           <li>
             <strong>Expand on &apos;People&apos;</strong> including...
+            <ul>
+              <li>
+                Using{" "}
+                <Link href='https://getavataaars.com/' target='_blank'>
+                  Avataar
+                </Link>
+              </li>
+              <li>Having a page per person</li>
+            </ul>
           </li>
-          <ul>
-            <li>
-              Using{" "}
-              <Link href='https://getavataaars.com/' target='_blank'>
-                Avataar
-              </Link>
-            </li>
-            <li>Having a page per person</li>
-          </ul>
           <li>
             <strong>Projects</strong>
             <br />

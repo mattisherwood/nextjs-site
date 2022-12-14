@@ -33,6 +33,10 @@ li {
   margin-bottom: 1em;
 }
 
+li > ul {
+  margin-top: 1em;
+}
+
 code {
   background: var(--offWhite);
   border-radius: calc(var(--spacing) * 0.5);
