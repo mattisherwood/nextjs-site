@@ -134,9 +134,9 @@ export default function Page() {
           <li>
             <strong>
               Add{" "}
-              <a href='https://plopjs.com/' target='_blank'>
+              <Link href='https://plopjs.com/' target='_blank'>
                 Plop
-              </a>{" "}
+              </Link>{" "}
               with Component Creator script
             </strong>
             <br />
