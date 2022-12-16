@@ -1,7 +1,5 @@
 .root {
-  width: 100%;
   background: var(--offWhite);
-  padding: calc(var(--spacing) * 5) 0;
   text-align: center;
 }
 

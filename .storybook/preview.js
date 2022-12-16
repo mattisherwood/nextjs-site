@@ -1,5 +1,6 @@
 import * as NextImage from "next/image"
 import "../styles/globals.css"
+import "../styles/structure.css"
 import "../styles/typography.css"
 import "../styles/variables.css"
 

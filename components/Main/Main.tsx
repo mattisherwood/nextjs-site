@@ -1,17 +1,43 @@
 import { ReactNode } from "react"
-import { Container, Hero } from ".."
+import { HeroBlock, MarkdownBlock, PageListBlock, PeopleBlock } from ".."
 import classes from "./Main.module.css"
 
 type Props = {
   children: ReactNode
-  content: { title: string; description: string }
+  contentBlocks: (
+    | { type: "hero"; title: string; subtitle: string }
+    | { type: "markdown"; content: string }
+    | { type: "pageList" }
+    | {
+        type: "people"
+        people: {
+          id: number
+          firstName: string
+          lastName: string
+          image: string
+          bio: string
+        }[]
+      }
+  )[]
 }
 
-export const Main = ({ children, content }: Props) => (
+export const Main = ({ contentBlocks, children }: Props) => (
   <main className={classes.main}>
-    <Hero content={content} />
-    <div className={classes.content}>
-      <Container>{children}</Container>
-    </div>
+    {contentBlocks.map((block) => {
+      console.log(block)
+      switch (block.type) {
+        case "hero":
+          return <HeroBlock {...block} />
+        case "markdown":
+          return <MarkdownBlock {...block} />
+        case "pageList":
+          return <PageListBlock {...block} />
+        case "people":
+          return <PeopleBlock {...block} />
+        default:
+          return <p>Unknown blocktype</p>
+      }
+    })}
+    {children}
   </main>
 )
