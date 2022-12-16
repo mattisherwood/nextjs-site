@@ -1,4 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
+import { pages } from "../../fixtures"
 import { Container } from "../Container"
 import { Main } from "./Main"
 
@@ -17,5 +18,5 @@ const Template: ComponentStory<typeof Main> = (args) => (
 
 export const Base = Template.bind({})
 Base.args = {
-  content: { title: "Title", description: "Description" },
+  contentBlocks: pages[0].contentBlocks,
 }
