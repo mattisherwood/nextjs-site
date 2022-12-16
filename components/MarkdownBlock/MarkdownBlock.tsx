@@ -9,7 +9,7 @@ type Props = {
 export const MarkdownBlock = ({ content }: Props) => (
   <section>
     <Container size='small'>
-      <ReactMarkdown children={content} />
+      <ReactMarkdown>{content}</ReactMarkdown>
     </Container>
   </section>
 )
