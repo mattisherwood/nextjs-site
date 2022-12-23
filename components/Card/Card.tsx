@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Link from "next/link"
 import { ReactNode } from "react"
+import { Link } from ".."
 import classes from "./Card.module.css"
 
 type Props = {
