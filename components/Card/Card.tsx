@@ -5,9 +5,8 @@ import classes from "./Card.module.css"
 type Props = {
   title: string
   description?: string
-  url?: string
   image?: ReactNode
-  avatar?: ReactNode
+  url?: string
 }
 
 type WrapperProps = {
@@ -15,10 +14,9 @@ type WrapperProps = {
   url?: string
 }
 
-export const Card = ({ title, description, url, image, avatar }: Props) => (
+export const Card = ({ title, description, image, url }: Props) => (
   <CardWrapper url={url}>
     {image && image}
-    {avatar && avatar}
     <div className={classes.content}>
       <h2>{title}</h2>
       {description && <p>{description}</p>}

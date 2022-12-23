@@ -1,3 +1,4 @@
+import type { Props as AvatarProps } from "avataaars"
 import { HeroBlock, MarkdownBlock, PageListBlock, PeopleBlock } from ".."
 import classes from "./Main.module.css"
 
@@ -11,8 +12,9 @@ export type ContentBlock =
         id: number
         firstName: string
         lastName: string
-        image: string
+        image?: string
         bio: string
+        avatar?: AvatarProps
       }[]
     }
 

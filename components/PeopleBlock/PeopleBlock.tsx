@@ -10,9 +10,9 @@ type Props = {
     id: number
     firstName: string
     lastName: string
-    image?: string
-    bio: string
     avatar?: AvatarProps
+    bio: string
+    image?: string
   }[]
 }
 
@@ -24,16 +24,19 @@ export const PeopleBlock = ({ people }: Props) => (
           <Card
             title={`${firstName} ${lastName}`}
             description={bio}
-            avatar={avatar && <Avatar {...avatar} className={classes.avatar} />}
             image={
-              image && (
-                <Image
-                  src={image}
-                  alt={`${firstName} ${lastName}`}
-                  width={100}
-                  height={100}
-                  className={classes.image}
-                />
+              avatar ? (
+                <Avatar {...avatar} className={classes.avatar} />
+              ) : (
+                image && (
+                  <Image
+                    src={image}
+                    alt={`${firstName} ${lastName}`}
+                    width={100}
+                    height={100}
+                    className={classes.image}
+                  />
+                )
               )
             }
             key={id}

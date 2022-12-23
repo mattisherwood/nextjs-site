@@ -1,9 +1,21 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Props as AvatarProps } from "avataaars"
+import Avatar from "avataaars"
+import { people } from "../../fixtures"
 import { Card } from "./Card"
+
+const avatar = people[0].avatar as AvatarProps
 
 export default {
   title: "Molecules/Card",
   component: Card,
+  argTypes: {
+    image: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof Card>
 
 const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />
@@ -23,10 +35,5 @@ export const ProfileCard = Template.bind({})
 ProfileCard.args = {
   title: "Jane Doe",
   description: "Bio goes here",
-  image: {
-    src: "https://i.pravatar.cc/300?img=1",
-    alt: "Profile Image",
-    width: 75,
-    height: 75,
-  },
+  image: <Avatar {...avatar} />,
 }
