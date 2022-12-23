@@ -1,5 +1,7 @@
 .card {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 3);
   padding: calc(var(--spacing) * 3);
   border: 1px solid var(--offWhite);
   border-radius: var(--borderRadius);

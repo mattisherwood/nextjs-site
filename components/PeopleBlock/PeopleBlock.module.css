@@ -1,3 +1,15 @@
-.exampleClass {
-  color: var(--primary);
+.avatar,
+.image {
+  flex-shrink: 0;
+  height: auto;
+}
+
+.avatar {
+  width: 110px;
+  margin: -15px -5px 0;
+}
+
+.image {
+  width: 100px;
+  border-radius: 50%;
 }
