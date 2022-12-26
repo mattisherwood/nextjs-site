@@ -1,6 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
-import { Container } from ".."
+import { Container, Link } from ".."
 import classes from "./Footer.module.css"
 
 export const Footer = () => {
@@ -9,11 +8,7 @@ export const Footer = () => {
       <Container size='large'>
         <p>
           Powered by{" "}
-          <Link
-            href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <Link href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'>
             <Image
               className={classes.logo}
               src='/vercel.svg'

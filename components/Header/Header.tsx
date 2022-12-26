@@ -1,6 +1,5 @@
 import clsx from "clsx"
-import Link from "next/link"
-import { Container } from ".."
+import { Container, Link } from ".."
 import { pages } from "../../fixtures"
 import classes from "./Header.module.css"
 type Props = {

@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Link from "next/link"
 import { ReactNode } from "react"
+import { Link } from ".."
 import classes from "./Card.module.css"
 
 type Props = {
@@ -22,7 +22,14 @@ type WrapperProps = {
 
 export const Card = ({ title, description, url, image }: Props) => (
   <CardWrapper url={url}>
-    {image && <Image {...image} />}
+    {image && (
+      <Image
+        src={image.src}
+        alt={image.alt}
+        width={image.width}
+        height={image.height}
+      />
+    )}
     <h2>{title}</h2>
     {description && <p>{description}</p>}
   </CardWrapper>
