@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
 import { pages } from "../../fixtures"
 import { Container } from "../Container"
+import type { ContentBlock } from "./Main"
 import { Main } from "./Main"
 
 export default {
@@ -18,5 +19,5 @@ const Template: ComponentStory<typeof Main> = (args) => (
 
 export const Base = Template.bind({})
 Base.args = {
-  contentBlocks: pages[0].contentBlocks,
+  contentBlocks: pages[0].contentBlocks as ContentBlock[],
 }

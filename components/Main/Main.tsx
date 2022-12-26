@@ -1,30 +1,28 @@
-import { ReactNode } from "react"
 import { HeroBlock, MarkdownBlock, PageListBlock, PeopleBlock } from ".."
 import classes from "./Main.module.css"
 
+export type ContentBlock =
+  | { type: "hero"; title: string; subtitle: string }
+  | { type: "markdown"; content: string }
+  | { type: "pageList" }
+  | {
+      type: "people"
+      people: {
+        id: number
+        firstName: string
+        lastName: string
+        image: string
+        bio: string
+      }[]
+    }
+
 type Props = {
-  children: ReactNode
-  contentBlocks: (
-    | { type: "hero"; title: string; subtitle: string }
-    | { type: "markdown"; content: string }
-    | { type: "pageList" }
-    | {
-        type: "people"
-        people: {
-          id: number
-          firstName: string
-          lastName: string
-          image: string
-          bio: string
-        }[]
-      }
-  )[]
+  contentBlocks: ContentBlock[]
 }
 
-export const Main = ({ contentBlocks, children }: Props) => (
+export const Main = ({ contentBlocks }: Props) => (
   <main className={classes.main}>
     {contentBlocks.map((block) => {
-      console.log(block)
       switch (block.type) {
         case "hero":
           return <HeroBlock {...block} />
@@ -38,6 +36,5 @@ export const Main = ({ contentBlocks, children }: Props) => (
           return <p>Unknown blocktype</p>
       }
     })}
-    {children}
   </main>
 )
