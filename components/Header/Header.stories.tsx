@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
 import { pages } from "../../fixtures"
+import { PageType } from "../../types"
 import { Header } from "./Header"
 
 export default {
@@ -8,7 +9,7 @@ export default {
   argTypes: {
     currentPage: {
       control: "inline-radio",
-      options: pages.map((page) => page.shortTitle),
+      options: pages.map((page) => page.slug),
     },
   },
 } as ComponentMeta<typeof Header>
@@ -18,5 +19,6 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />
 export const Base = Template.bind({})
 
 Base.args = {
-  currentPage: "Home",
+  currentPage: "home",
+  pages: pages as PageType[],
 }

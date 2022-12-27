@@ -7,12 +7,12 @@ export const PageListBlock = ({}: Props) => (
   <section>
     <Container size='small'>
       <Grid>
-        {pages.map(({ id, shortTitle, shortDescription, url }) => (
+        {pages.map(({ slug, shortTitle, shortDescription, url }) => (
           <Card
             title={shortTitle}
             description={shortDescription}
             url={url}
-            key={id}
+            key={slug}
           />
         ))}
       </Grid>

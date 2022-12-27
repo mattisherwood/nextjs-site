@@ -1,22 +1,6 @@
-import type { Props as AvatarProps } from "avataaars"
 import { HeroBlock, MarkdownBlock, PageListBlock, PeopleBlock } from ".."
+import { ContentBlock } from "../../types"
 import classes from "./Main.module.css"
-
-export type ContentBlock =
-  | { type: "hero"; title: string; subtitle: string }
-  | { type: "markdown"; content: string }
-  | { type: "pageList" }
-  | {
-      type: "people"
-      people: {
-        id: number
-        firstName: string
-        lastName: string
-        image?: string
-        bio: string
-        avatar?: AvatarProps
-      }[]
-    }
 
 type Props = {
   contentBlocks: ContentBlock[]

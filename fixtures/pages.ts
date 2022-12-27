@@ -2,7 +2,7 @@ import { people } from "./people"
 
 export const pages = [
   {
-    id: 1,
+    slug: "home",
     metadata: {
       description: "Using React/Typescript",
       title: "Welcome to this NextJS Website",
@@ -22,7 +22,7 @@ export const pages = [
     ],
   },
   {
-    id: 2,
+    slug: "about",
     metadata: {
       description: "Find out more about our organisation.",
       title: "About us",
@@ -109,7 +109,7 @@ These have been purposefully left out.
     ],
   },
   {
-    id: 3,
+    slug: "team",
     metadata: {
       description: "Some of the fantastic team who make our organisation work.",
       title: "Our Team",
@@ -128,7 +128,7 @@ These have been purposefully left out.
     ],
   },
   {
-    id: 4,
+    slug: "contact",
     metadata: {
       description: "Get in touch.",
       title: "Contact us",

@@ -1,24 +1,27 @@
 import clsx from "clsx"
 import { Container, Link } from ".."
-import { pages } from "../../fixtures"
+import { PageType } from "../../types"
+
 import classes from "./Header.module.css"
 type Props = {
-  currentPage: string
+  currentPage?: string
+  pages: PageType[]
 }
 
-export const Header = ({ currentPage }: Props) => {
+export const Header = ({ currentPage, pages }: Props) => {
   return (
     <header className={classes.header}>
       <Container size='large'>
         <nav className={classes.navigation}>
-          {pages.map(({ id, shortTitle, url }) => (
+          {pages.map(({ slug, shortTitle, url }) => (
             <Link
               className={clsx(
                 classes.link,
-                currentPage == shortTitle && classes.current
+                slug == "home" && classes.home,
+                currentPage == slug && classes.current
               )}
               href={url}
-              key={id}
+              key={slug}
             >
               {shortTitle}
             </Link>

@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next"
+import type { GetStaticPaths, GetStaticProps } from "next"
 import { Footer, Head, Header, Main } from "../components"
 import { pages } from "../fixtures"
 import { ContentBlock, PageType } from "../types"
@@ -20,8 +20,23 @@ const Page = ({ page }: Props) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const slug = "home"
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: pages.map(({ slug }) => {
+      return {
+        params: {
+          slug,
+        },
+      }
+    }),
+    fallback: false,
+  }
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = Array.isArray(params?.slug)
+    ? params?.slug.join("/")
+    : params?.slug
   const page = getPageData(slug!)
   return {
     props: {

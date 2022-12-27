@@ -8,12 +8,10 @@ type Props = {
 const websiteTitle = "NextJS Website"
 
 export const Head = ({ description, title }: Props) => {
+  const dynamicTitle = (title != "Home" ? `${title} | ` : null) + websiteTitle
   return (
     <NextHead>
-      <title>
-        {title != "Home" ? `${title} | ` : null}
-        {websiteTitle}
-      </title>
+      <title>{dynamicTitle}</title>
       <meta name='description' content={description} />
       <link rel='icon' href='/favicon.ico' />
     </NextHead>
